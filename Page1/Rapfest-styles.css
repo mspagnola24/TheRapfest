@@ -2,7 +2,7 @@
     background-image: url(joel-muniz-QadWZdWSe_8-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh; 
+    height: 100vh;
 }
 
 #topNavbar {
@@ -130,91 +130,124 @@
 
 /* ---------- news ticker ends ---------- */
 
-/* ---------- digital covers ---------- */
+/* ---------- footer ---------- */
 
-.dc-top {
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer nav {
+    margin-bottom: 20px;
+}
+
+#footerAlpha {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    place-items: center;
-    background-color: black;
-}
-
-#dc-sides-h5 {
-    font-family: 'Anton', sans-serif;
-    font-size: 3rem;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color: white;
-    padding: 10px 5px;
-    position: -webkit-sticky!important;
-    position: sticky!important;
-    top: 10px!important;
-}
-
-.dc-sides {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dc-scroll {
-    display: flex!important;
     overflow: hidden;
-    height: 70vw;
+    float: right;
 }
 
-.dc-scroll img {
-    max-width: 100%;
-    vertical-align: middle;
-    padding: 20px 0;
-    box-sizing: border-box;
-    transition: opacity .2s;
+#footerAlpha li {
+    float: left;
 }
 
-.dc-scroll:hover img {
-    opacity: 0.5;
-}
-   
-.dc-scroll img:hover {
-    opacity: 1;
-}
-   
-.dc-scroll .img-column {
-   animation: var(--animation, none) 20s infinite linear;
-}
-   
-.dc-scroll .img-column:hover {
-   animation-play-state: paused;
-}
-   
-.dc-scroll .img-column:nth-of-type(odd) {
-    align-self: flex-end;
-
-}
-   
-@keyframes slide {
-    to {
-      -webkit-transform: translateY(var(--direction, -50%));
-              transform: translateY(var(--direction, -50%));
-    }
+#footerAlpha li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
 }
 
-#dc-article {
-    flex: 0;
-    display: inline-flex;
+footer .form-control {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    padding: 15px;
+    float: left;
 }
 
-#dc-article-img {
-    background-image: url(dc-article-demo.jpg);
-    background-repeat: no-repeat;
-    height: auto;
+.form-control::placeholder {
+    color: white;
 }
 
-#dc-article-rest {
-    width: 50%; 
+footer img {
+    width: 400px!important;
+    margin-left: 130px;
 }
 
-/* ---------- digital covers ends ---------- */ 
+h2 {
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline 5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+}
+
+#floatingInput {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+#floatingInput::placeholder {
+    color: white;
+}
+
+.input-group-btn {
+    padding-left: 10px;
+}
+
+.input-group-btn button {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.input-group-btn button:hover {
+    color: rgb(20, 20, 20);
+    background-color: white;
+}
+
+#floatingInputLabel {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+footer a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#footerUL {
+    list-style-type: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
