@@ -130,6 +130,95 @@
 
 /* ---------- news ticker ends ---------- */
 
+/* ---------- digital covers ---------- */
+
+.dc-top {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+
+#dc-sides-h5 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+    padding: 10px 5px;
+    position: -webkit-sticky!important;
+    position: sticky!important;
+    top: 10px!important;
+}
+
+.dc-sides {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dc-scroll {
+    display: flex!important;
+    overflow: hidden;
+    height: 70vw;
+}
+
+.dc-scroll img {
+    max-width: 100%;
+    vertical-align: middle;
+    padding: 20px 0;
+    box-sizing: border-box;
+    transition: opacity .2s;
+}
+
+.dc-scroll:hover img {
+    opacity: 0.5;
+}
+   
+.dc-scroll img:hover {
+    opacity: 1;
+}
+   
+.dc-scroll .img-column {
+   animation: var(--animation, none) 20s infinite linear;
+}
+   
+.dc-scroll .img-column:hover {
+   animation-play-state: paused;
+}
+   
+.dc-scroll .img-column:nth-of-type(odd) {
+    align-self: flex-end;
+
+}
+   
+@keyframes slide {
+    to {
+      -webkit-transform: translateY(var(--direction, -50%));
+              transform: translateY(var(--direction, -50%));
+    }
+}
+
+#dc-article {
+    flex: 0;
+    display: inline-flex;
+}
+
+#dc-article-img {
+    background-image: url(dc-article-demo.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#dc-article-rest {
+    width: 50%;
+}
+
+/* ---------- digital covers ends ---------- */
+
 /* ---------- footer ---------- */
 
 footer {
